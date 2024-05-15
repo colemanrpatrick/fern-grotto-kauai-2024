@@ -1,0 +1,332 @@
+
+/*========== banner ==========*/
+#hero {
+  width: 100%;
+  height: 45em;
+  position: relative;
+  display: block;
+  overflow: hidden;
+}
+#hero img {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 1;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+@media(max-width:1030px){
+  #hero img{
+    width: auto;
+    height: 100%;
+  }
+}
+#cta {
+	position: absolute;
+  text-align: left;
+  z-index: 3;
+  background: #DAD7CD;
+  bottom: 2em;
+  left: 2em;
+  padding: 3em;
+	border-radius: 1.5em;
+}
+#cta h1 {
+  text-transform: capitalize;
+  font-size: 4em;
+  color: #3A5A40;
+  line-height: 1em;
+  padding-bottom: 0.5em;
+  font-weight: 800;
+  font-family: "Chelsea Market";
+}
+#cta h1 span {
+  display: block;
+  color: #588157;
+  text-transform: capitalize;
+  font-size: 0.4em;
+  font-weight: lighter;
+  line-height: 1.2em;
+  letter-spacing: 0.025em;
+  font-weight: 800;
+}
+#cta a {
+display: inline-block;
+  border-radius: 5em;
+  background-color: #588157;
+  padding: 0.25em;
+  text-align: right;
+  margin-top: 0.5em;
+  font-family: "Chelsea Market";
+}
+#cta a span:not(.material-symbols-outlined){
+display: inline-block;
+  vertical-align: middle;
+  color: gold;
+  text-transform: capitalize;
+  font-size: 1.25em;
+  font-weight: bold;
+  padding-left: 0.5em;
+font-family: "Chelsea Market";
+line-height: 1em;
+}
+#cta a span.material-symbols-outlined{
+  color: gold;
+  background-color: #344E41;
+  border-radius: 5em;
+  padding: 0.075em 0.05em 0.075em 0.15em;
+  font-size: 2em;
+  margin-left: 0.25em;
+  display: inline-block;
+  vertical-align: middle;
+}
+@media(max-width:800px){
+	#cta {
+    padding-left: 2em;
+	}
+}
+@media(max-width:750px){
+  #cta{
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    border-radius: 0;
+    text-align: center;
+    background-color: rgba(0,0,0,0.45);
+    padding: 18em 0em 8em 0em;
+  }
+  #cta h1{
+    color: white;
+  }
+  #cta h1 span{
+    color: white;
+  }
+  #cta a{
+    font-size: 1.15em;
+    border: 0.25em solid white;
+  }
+}
+/*========== product-section ===========*/
+
+/*========== gallery content =============*/
+#gallery{
+    background-color: #588157;
+    padding: 3em;
+}
+#gallery::before{
+	content: '';
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	height: 0;
+	position: fixed;
+  background-image: url("../images/fgDesktop.jpg");
+  background-size: cover;
+	background-position: center;
+	transition: 0.3s;
+	z-index: -1;
+}
+.checkpoint.active #gallery-container{
+	opacity: 1;
+	height: 40em;
+}
+#gallery h2 {
+  width: 100%;
+  text-align: center;
+  text-transform: capitalize;
+  color: white;
+  font-size: 2em;
+  
+  font-weight: lighter;
+  padding: 0.5em;
+  margin-bottom: 0.5em;
+  font-family: "Chelsea Market";
+}
+#gallery-container{
+	width: 100%;
+	position: relative;
+}
+#gallery-container{
+	width: 100%;
+	position: relative;
+}
+#gallery nav{
+	width: 100%;
+	background-color: rgba(0,0,0,0.5);
+	display: table;
+	border-radius: 3em;
+	white-space: nowrap;
+}
+.article-btn {
+  width: 33.3%;
+  display: table-cell;
+  vertical-align: top;
+  background-color: transparent;
+  color: #dad7cd;
+  border: 0;
+  font-size: 1.33em;
+  padding: 0.25em;
+  text-transform: capitalize;
+  transition: 0.3s;
+  border-radius: 3em;
+  cursor: pointer;
+  line-height: 1.1em;
+}
+.article-btn:hover{
+	color: gold;
+}
+.article-btn.active{
+	background-color: gold;
+	color: #344e41;
+}
+#gallery-container{
+	width: 100%;
+	position: relative;
+	height: 30em;
+	max-width: 65em;
+	margin: 0 auto;
+}
+#gallery-container .article {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transform: scaleX(0);
+    transition: 0.3s;
+    padding: 3em;
+}
+#gallery-container .article.active{
+	transform: scaleX(1);
+}
+#gallery-container .article .imG {
+  display: inline-block;
+  height: 100%;
+  width: 50%;
+  vertical-align: middle;
+  margin-left: -3px;
+  margin-right: -3px;
+  border: 0.5em solid #dad7cd;
+}
+#gallery-container .article article{
+	display: inline-block;
+	width: 45%;
+	vertical-align: middle;
+	padding: 1em;
+	background: #dad7cd;
+	margin: 1em;
+}
+#gallery-container .article article p{
+	line-height: 2em;
+	font-size: 1.15em;
+	max-width: 40em;
+	margin: 0 auto;
+	display: block;
+	color: #203725;
+}
+#imG1{
+	background-image: url("../images/fern-grotto.jpg");
+	background-size: cover;
+	background-position: center;
+}
+#imG2{
+	background-image: url("../images/wailua-river-a.jpg");
+	background-size: cover;
+	background-position: center;
+}
+#imG3{
+	background-image: url("../images/waimea-canyon.jpg");
+	background-size: cover;
+	background-position: center;
+}
+@media(max-width:1000px){
+	#gallery-container {
+        height: 42em;
+    }
+	#gallery-container .article .imG {
+    display: block;
+    height: 16em;
+    width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+	}
+	#gallery-container .article article {
+    display: block;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 2em;
+    background-color: #dad7cd;
+	}
+	#gallery-container .article article p {
+		padding: 0;
+	}
+	#gallery {
+    padding: 1em;
+	}
+}
+@media(max-width:450px){
+    #gallery-container .article{
+        padding: 1em 0em;
+    }
+}
+#product-section {
+  padding: 2em;
+  text-align: center;
+  border-top: 1em solid #dad7cd;
+}
+
+/* @media(max-width:800px){
+	#gallery-container .article {
+    padding: 4em 0em;
+	}
+}
+#product-section ul {
+  display: table;
+  width: 100%;
+}
+#product-section li {
+  display: table-cell;
+  width: 33.3%;
+  vertical-align: middle;
+}*/
+
+.activity-title {
+    font-size: 2em;
+    text-align: center;
+    display: block;
+    font-family: "Chelsea Market";
+    text-transform: capitalize;
+    padding-bottom: 1em;
+    color: #344e41;
+    padding-top: 1em;
+} 
+@media(max-width:500px){
+    #product-section{
+        padding: 0;
+    }
+} 
+
+#product-section-half {
+  width: 100%;
+  display: table;
+}
+#product-section-half li {
+  width: 50%;
+  text-align: center;
+  padding: 1.75em;
+  display: table-cell;
+}
+@media(max-width:800px){
+  #product-section-half {
+    display: block;
+    padding-bottom: 1em;
+  }
+  #product-section-half li{
+    width: 100%;
+    display: block;
+    padding: 1em 1em 0em 1em;
+  }
+}

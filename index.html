@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/home.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Chelsea+Market&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <meta name="viewport" content="user-scalable = yes, width=320, initial-scale=1">
+  <title></title>
+</head>
+
+<body>
+  <!-- =========================== -->
+  <header id="masthead">
+    <a href="/" id="logo">
+      <img src="images/ferngrottokauai-logo.png" alt="">
+    </a>
+    <ul id="phone">
+      <li id="phone-left"><a href="#"><span>(Toll Free)</span> 1-866-482-9775</a></li>
+      <li id="phone-right"><a href="#"><span>(Local)</span> 808-892-2082</a></li>
+    </ul>
+    <nav id="main-nav">
+      <a href="#"><span class="material-symbols-outlined">home</span></a>
+      <a href="#">tours</a>
+      <a href="#">about us</a>
+      <a href="#">contact</a>
+      <a href="#"><span class="material-symbols-outlined">shopping_cart</span>cart</a>
+      <button type="button" name="button" class="menu-btn"
+        onclick="idToggle('menu-btn','active');idToggle('main-nav','active')" id="menu-btn">
+        <hr class="menu-btn-hr-1" />
+        <hr class="menu-btn-hr-2" />
+        <hr class="menu-btn-hr-3" />
+      </button>
+    </nav>
+  </header>
+  <!-- =========================== -->
+  <main>
+    <!-- =========================== -->
+
+    <div id="hero">
+      <img src="images/fern-grotto-kauai-hero.jpg" alt="">
+      <div id="cta">
+        <h1>visit<br />fern grotto<br> <span>discounts on kauai<br />river boat tours</span></h1>
+        <a href="" class="learn-more"><span>learn more</span><span
+            class="material-symbols-outlined">chevron_right</span></a>
+      </div>
+    </div>
+
+    <!-- ============================ -->
+    <div id="product-section">
+      <span class="activity-title">popular kauai<br>tours and activies</span>
+      <div class="product-full">
+        <div class="img-container">
+          <img src="images/wailua-river-a.jpg" alt="">
+        </div>
+        <article>
+          <header>
+            <h2>Wailua River Cruise & Fern Grotto Tour</h2>
+            <h3>vendor name</h3>
+          </header>
+          <p>Enjoy a tranquil boat cruise on Kauai's Wailua River, the only navigable river in all of Hawaii.</p>
+          <ul>
+            <li>
+              <span class="before-price">$30.00</span>
+              <span class="after-price">$27.73</span>
+
+            </li>
+            <li>
+              <a href="" class="learn-more">
+                <span>learn more</span>
+                <span class="material-symbols-outlined">chevron_right</span>
+              </a>
+            </li>
+          </ul>
+        </article>
+      </div>
+      <!-- ======================================== -->
+      <ul id="product-section-half">
+
+        <li>
+          <div class="product-med">
+            <header>
+              <h2>Waimea Canyon, Wailua River & Fern Grotto Tour </h2>
+              <h3>vendor name</h3>
+            </header>
+            <img src="images/OpaekaaFalls.jpg" alt="">
+            <div class="price">
+              <span class="before-price">$231.41</span>
+              <span class="after-price">$195.00</span>
+              <a href="" class="learn-more">
+                <span>learn more</span>
+                <span class="material-symbols-outlined">chevron_right</span>
+              </a>
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <div class="product-med">
+            <header>
+              <h2>Smith's Luau</h2>
+              <h3>vendor name</h3>
+            </header>
+            <img src="images/smiths-garden-luau.jpg" alt="">
+            <div class="price">
+              <span class="before-price">$231.41</span>
+              <span class="after-price">$195.00</span>
+              <a href="" class="learn-more">
+                <span>learn more</span>
+                <span class="material-symbols-outlined">chevron_right</span>
+              </a>
+            </div>
+          </div>
+        </li>
+
+      </ul>
+      <!-- ======================================== -->
+    </div>
+   
+    <!-- ============================ -->
+    <div id="gallery">
+        <h2>sightseeing on kauai</h2>
+        <nav>
+          <button class='article-btn active'
+            onclick="tabToggle(1,'article',' active');tabToggle(1,'article-btn',' active')">fern<br />grotto</button>
+          <button class='article-btn'
+            onclick="tabToggle(2,'article',' active');tabToggle(2,'article-btn',' active')">wailua<br />river</button>
+          <button class='article-btn'
+            onclick="tabToggle(3,'article',' active');tabToggle(3,'article-btn',' active')">waimea<br />canyon</button>
+        </nav>
+        <div id="gallery-container">
+          <div class="article active">
+            <div class="imG" id="imG1"></div>
+            <article>
+              <p>Fern Grotto is a fern-fringed lava cave formed millions of years ago. This colorful exotic locations is
+                a must-see for all visitors to Kauai!</p>
+              <p>to experience one of Kauai's most popular natural attractions, reserve the <a href="#">wailua river
+                  tour</a> or <a href="#">waimea canyon combo.</a></p>
+            </article>
+          </div>
+          <div class="article">
+            <div class="imG" id="imG2">
+            </div>
+            <article>
+              <p>The longest navigable river in all of Hawaii is a popular visitor destination. Enjoy a tranquil boat
+                tour accompanied by songs and stories of old Hawaii</p>
+              <p>riverboat reservations can by made by booking the <a href="#">Wailua River Cruise to Fern Grotto
+                  Tour</a>, or in <a href="#">combination</a></p>
+            </article>
+          </div>
+          <div class="article">
+            <div class="imG" id="imG3"></div>
+            <article>
+              <p>Visit Kauai's gorgeous Waimea Canyon, known as the "Grand Canyon of the Pacific," and marvel at the
+                multi-colored rock walls. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam expedita non veritatis sunt vero rem, iure aut!</p>
+                
+            </article>
+          </div>
+        </div>
+      </div>
+    <!-- ============================ -->
+    <div id="why-book-with">
+      <h2>why book with us?</h2>
+      <ul>
+        <li>
+          <div class="booking-details">
+            <div class="booking-img-container">
+              <img src="images/guarantee-icons.png" alt="" style="left:0;top:0;">
+            </div>
+            <header>Secure Shopping</header>
+            <p>Safe, secure online booking system with validated privacy protection.</p>
+          </div>
+        </li>
+        <li>
+          <div class="booking-details">
+            <div class="booking-img-container">
+              <img src="images/guarantee-icons.png" alt="" style="left:-11em;top:0;">
+            </div>
+            <header>Advance Booking<br />Satisfaction</header>
+            <p>Avoid sellouts and price increases. Relax knowing your luau tickets are reserved and guaranteed.</p>
+          </div>
+        </li>
+        <li>
+          <div class="booking-details">
+            <div class="booking-img-container">
+              <img src="images/guarantee-icons.png" alt="" style="left:-16.5em;top:0;">
+            </div>
+            <header>Friendly Support</header>
+            <p>Our staff will answer any questions you may have and ensure 100% satisfaction.</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </main>
+  <!-- ============================ -->
+  <footer class="footer">
+
+    <a href="#" id="logo-footer">
+      <img src="images/ferngrottokauai-logo.png" alt="">
+    </a>
+
+    <div class="social">
+      <p>follow us</p>
+      <ul>
+        <li><a href="https://www.youtube.com/hawaiidiscount"><img src="images/youtube.svg" alt=""></a></li>
+        <li><a href="https://www.facebook.com/HawaiiDiscount"><img src="images/facebook.svg" alt=""></a></li>
+        <li><a href=""><img src="images/instagram.svg" alt=""></a></li>
+        <li><a href="https://twitter.com/hawaiidiscount"><img src="images/twitter.svg" alt=""></a></li>
+      </ul>
+    </div>
+    <section>
+      <ul>
+        <li><b>navigation</b></li>
+        <li> <a href="reservations.htm">reservations</a></li>
+        <li> <a href="#">home</a> </li>
+        <li> <a href="#">contact</a> </li>
+        <li> <a href="#">about us</a> </li>
+        <li> <a href="#">cart</a> </li>
+      </ul>
+      <ul>
+        <li><b>site info</b></li>
+        <li> <a href="#">faq</a> </li>
+        <li> <a href="#">site map</a> </li>
+        <li> <a href="#">privacy policy</a> </li>
+        <li> <a href="#">terms</a> </li>
+        <li> <a href="#">login</a> </li>
+      </ul>
+    </section>
+    <p>Copyright (c) 2024 hawaii discount All Rights Reserved.</p>
+  </footer>
+  <!-- =========================== -->
+
+  <!-- =========================== -->
+  <script type="text/javascript" src="js/toggle.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>
