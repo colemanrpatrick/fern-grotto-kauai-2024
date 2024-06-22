@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/home.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Chelsea+Market&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <meta name="viewport" content="user-scalable = yes, width=320, initial-scale=1">
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+  
+  <title></title>
+</head>
+
+<body>
+  <!-- =========================== -->
+  <header id="masthead">
+    <a href="/" id="logo">
+      <img src="images/ferngrottokauai-logo.png" alt="">
+    </a>
+    <ul id="phone">
+      <li id="phone-left"><a href="#"><span>(Toll Free)</span> 1-866-482-9775</a></li>
+      <li id="phone-right"><a href="#"><span>(Local)</span> 808-892-2082</a></li>
+    </ul>
+    <nav id="main-nav">
+      <a href="#"><span class="material-symbols-outlined">home</span></a>
+      <a href="#">tours</a>
+      <a href="#">about us</a>
+      <a href="#">contact</a>
+      <a href="#"><span class="material-symbols-outlined">shopping_cart</span>cart</a>
+      <button type="button" name="button" class="menu-btn"
+        onclick="idToggle('menu-btn','active');idToggle('main-nav','active')" id="menu-btn">
+        <hr class="menu-btn-hr-1" />
+        <hr class="menu-btn-hr-2" />
+        <hr class="menu-btn-hr-3" />
+      </button>
+    </nav>
+  </header>
+  <!-- =========================== -->
+  <main>
+    <!-- =========================== -->
+    <link rel="stylesheet" href="css/reservations.css">
+    <div id="activity-header">
+      <img src="images/Smiths-Tropical-Paradise-Luau.jpg" alt="">
+    </div>
+
+    <div id="product-content">
+      <div id="product-main">
+        <h1 id="product-header">Smith's Tropical Paradise Luau</h1>
+        <ul id="product-features">
+          <li><span class="material-symbols-outlined">check_circle</span><span>live music</span></li>
+          <li><span class="material-symbols-outlined">check_circle</span><span>entertainment</span></li>
+          <li><span class="material-symbols-outlined">check_circle</span><span>culture</span></li>
+          <li><span class="material-symbols-outlined">check_circle</span><span>dinner</span></li>
+          <li><span class="material-symbols-outlined">check_circle</span><span>lei greeting</span></li>
+        </ul>
+        <p class="product-duration"><span class="material-symbols-outlined">schedule</span><span>Duration: Approximately
+            3 hours</span></p>
+        <ul id="product-prices">
+          <li id="before-price">was<span> $0</span> </li>
+          <li id="after-price">from<span> $140*</span> </li>
+          <!-- <li id="after-price">now<span>$145</span> </li> -->
+        </ul>
+        <div id="product-buttons">
+          <button type="button" id="product-button">
+            <p>book now</p>
+            <Span Class="material-symbols-outlined">chevron_right</Span>
+          </button>
+        </div>
+      </div>
+      <div id="player-wrapper">
+        <iframe src="https://www.youtube.com/embed/S2R-xdQaijs?rel=0&amp;amp;showinfo=0&amp;amp;fc=0"></iframe>
+      </div>
+    </div>
+
+    <button id="book-now-alt" class="hidden">book now<span
+        class="material-symbols-outlined">calendar_month</span></button>
+
+    <div class="activity-details">
+      <div class="activity-article">
+        <h3>Tour Times:</h3>
+        <p>
+          <b>MONTHLY CALL IN SPECIAL</b>
+          Please call to place your reservation for Smith's Tropical Paradise Luau and you will receive an additional $9
+          off per adult on an additional activity. Must book another activity with Smith's Luau to receive additional
+          discount.
+        </p>
+        <p>A popular combination is Smith's Luau and the Fern Grotto Cruise, a 1.5 hour boat ride up the Wailua River.
+          Be sure to add the luau to cart before using this link!</p>
+        <p>Smith’s Luau on Kauai is one of the island’s top Hawaiian luaus. What makes it special is its setting in a
+          torch-lit lagoon amphitheater along the banks of the Wailua River and surrounded by tropical gardens. Enjoy a
+          variety of cultural presentations, which are followed by a delicious luau buffet dinner that includes island
+          favorites, such as kalua pork, chicken adobo, teriyaki beef, mahi mahi (island fish), lomi salmon and a
+          variety of salads, vegetables, rice and of course, dessert.</p>
+        <p>Dinner is followed by an exciting show featuring music and dances from Hawaii, Samoa, Tahits, New Zealand,
+          the Philippines and Japan. Smith's Tropical Luau has it all! </p>
+      </div>
+      <div class="activity-article">
+        <ul>
+          <li>Shell lei greeting</li>
+          <li>Enjoy a stroll through the 30-acre tropical gardens or take a narrated tram tour</li>
+          <li>Traditional imu ceremony – learn about the ancient Hawaiian cooking method where kalua pig is wrapped in
+            ti leaves and cooked in an earthen oven</li>
+          <li>Delicious luau dinner featuring a wide variety of delicacies</li>
+          <li>Spectacular Rhythms of Aloha luau show</li>
+        </ul>
+      </div>
+    </div>
+
+    <ul id="activity-gallery">
+      <li>
+        <a href="/Content/Files/fun-kauai-tubing-adventure.jpg" Class="gallery-image" target="_blank"
+          data-alt="fun tubing adventure"></a>
+        <p class="img-description"></p>
+      </li>
+      <li>
+        <a href="/Content/Files/cave-tubing-kauai.jpg" Class="gallery-image" target="_blank"
+          data-alt="cave tubing adventure"></a>
+        <p class="img-description"></p>
+      </li>
+      <li>
+        <a href="/Content/Files/tubing-view-from-tunnel.jpg" Class="gallery-image" target="_blank"
+          data-alt="tubing view from tunnel"></a>
+        <p class="img-description"></p>
+      </li>
+      <li>
+        <a href="/Content/Files/kauai-nature-tubing.jpg" Class="gallery-image" target="_blank"
+          data-alt="nature tubing in kauai"></a>
+        <p class="img-description"></p>
+      </li>
+    </ul>
+
+
+    <div class="activity-details">
+      <div class="activity-article">
+        <h3>Tour Times:</h3>
+        <p>
+          <b>MONTHLY CALL IN SPECIAL</b>
+          Please call to place your reservation for Smith's Tropical Paradise Luau and you will receive an additional $9
+          off per adult on an additional activity. Must book another activity with Smith's Luau to receive additional
+          discount.
+        </p>
+        <p>A popular combination is Smith's Luau and the Fern Grotto Cruise, a 1.5 hour boat ride up the Wailua River.
+          Be sure to add the luau to cart before using this link!</p>
+        <p>Smith’s Luau on Kauai is one of the island’s top Hawaiian luaus. What makes it special is its setting in a
+          torch-lit lagoon amphitheater along the banks of the Wailua River and surrounded by tropical gardens. Enjoy a
+          variety of cultural presentations, which are followed by a delicious luau buffet dinner that includes island
+          favorites, such as kalua pork, chicken adobo, teriyaki beef, mahi mahi (island fish), lomi salmon and a
+          variety of salads, vegetables, rice and of course, dessert.</p>
+        <p>Dinner is followed by an exciting show featuring music and dances from Hawaii, Samoa, Tahits, New Zealand,
+          the Philippines and Japan. Smith's Tropical Luau has it all! </p>
+      </div>
+      <div class="activity-article">
+        <ul>
+          <li>Shell lei greeting</li>
+          <li>Enjoy a stroll through the 30-acre tropical gardens or take a narrated tram tour</li>
+          <li>Traditional imu ceremony – learn about the ancient Hawaiian cooking method where kalua pig is wrapped in
+            ti leaves and cooked in an earthen oven</li>
+          <li>Delicious luau dinner featuring a wide variety of delicacies</li>
+          <li>Spectacular Rhythms of Aloha luau show</li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="activity-aside">
+      <article>
+        <h3>special instructions</h3>
+        <ul>
+
+          <li>
+            <b>Where and When:</b>
+            <p>Check in 30 minutes prior to your requested tour time at the Kauai Backcountry Adventures office, located
+              at
+              3-4131 Kuhio Highway, Lihue, HI 96766. View Map
+              Look for the wooden fence and a sign that says "Kauai Backcountry Adventures."</p>
+          </li>
+
+          <li>
+            <b>Restrictions:</b>
+            <p>Participants must be 5 years and older AND 43" (110 cm) or taller.
+              Weight limit is 300 pounds (136 kg)
+              Children 15 years and under must be accompanied by an adult 18 years and older. Those 16-17 years old may
+              attend the tour without an adult, however, a parent must come in to check in the minor and sign a waiver.
+              Not recommended for anyone claustrophobic or those with back, hip or knee problems.
+              Women up to the second trimester of pregnancy may participate with written physician approval.</p>
+          </li>
+
+          <li>
+            <b>Special Notes:</b>
+            <p>You can rent a wetsuit for $10 or buy one for $30.
+              Unless extreme weather prohibits, tours go out rain or shine.</p>
+          </li>
+
+          <li>
+            <b>Operation Days:</b>
+            <p>Daily</p>
+          </li>
+
+          <li>
+            <b>Duration:</b>
+            <p>Approximately 3 hours</p>
+          </li>
+
+          <li>
+            <b>Vendor:</b>
+            <p>Kauai Backcountry Adventures</p>
+          </li>
+
+          <li>
+            <b>Island:</b>
+            <p>Kauai</p>
+          </li>
+
+          <li>
+            <b>Capacity:</b>
+            <p>20</p>
+          </li>
+
+          <li>
+            <b>Equipment:</b>
+            <p>Tube, gloves and headlights provided.</p>
+          </li>
+        </ul>
+      </article>
+    </div>
+
+    <script>
+      const emailName = '';
+      const emailPhone = '';
+    </script>
+
+    <script>
+      let cartData = { "ProductID": 60, "ProductKey": "135", "ProductTitle": "Smith's Tropical Paradise Luau - Discount Kauai Luau", "ProductOrderKey": "135", "Prices": [{ "ID": 1, "ControlName": "price_135_1", "Key": "2591", "Description": "Full Luau - Per Adult (14 yrs+)", "Limit": -1, "Quantity": 0, "ListPrice": 140.00, "Saleprice": 0.00, "DisplayOrder": 1, "Active": true, "Exempt": true, "Hidden": false, "Category": "Adult", "Grouping": "Full Luau", "Availability": { "CollectorName": "Activity Date", "ReferenceControl": "ActivityDate_135", "ClosedDates": "[\"06/21/2024\",\"\"]", "Cutoff": "3:00 PM" } }, { "ID": 2, "ControlName": "price_135_2", "Key": "8584", "Description": "Full Luau - Per Junior (7-13 yrs)", "Limit": -1, "Quantity": 0, "ListPrice": 35.00, "Saleprice": 0.00, "DisplayOrder": 2, "Active": true, "Exempt": true, "Hidden": false, "Category": "Youth", "Grouping": "Full Luau", "Availability": { "CollectorName": "Activity Date", "ReferenceControl": "ActivityDate_135", "ClosedDates": "[\"06/21/2024\",\"\"]", "Cutoff": "3:00 PM" } }, { "ID": 3, "ControlName": "price_135_3", "Key": "8585", "Description": "Full Luau - Per Child (3-6 yrs)", "Limit": -1, "Quantity": 0, "ListPrice": 25.00, "Saleprice": 0.00, "DisplayOrder": 3, "Active": true, "Exempt": true, "Hidden": false, "Category": "Child", "Grouping": "Full Luau", "Availability": { "CollectorName": "Activity Date", "ReferenceControl": "ActivityDate_135", "ClosedDates": "[\"06/21/2024\",\"\"]", "Cutoff": "3:00 PM" } }, { "ID": 4, "ControlName": "price_135_4", "Key": "8588", "Description": "Full Luau - Per Infant (0-2 yrs)", "Limit": -1, "Quantity": 0, "ListPrice": 0.00, "Saleprice": 0.00, "DisplayOrder": 6, "Active": true, "Exempt": false, "Hidden": false, "Category": "Infant", "Grouping": null, "Availability": { "CollectorName": "Activity Date", "ReferenceControl": "ActivityDate_135", "ClosedDates": "[\"06/21/2024\",\"\"]", "Cutoff": "3:00 PM" } }], "Availabilities": [{ "CollectorName": "Activity Date", "ReferenceControl": "ActivityDate_135", "ClosedDates": "[\"06/21/2024\",\"06/25/2024\",\"07/02/2024\",\"07/09/2024\",\"07/16/2024\",\"09/03/2024\",\"09/10/2024\",\"09/17/2024\",\"09/24/2024\",\"10/01/2024\",\"10/08/2024\",\"10/15/2024\",\"10/22/2024\",\"10/29/2024\",\"11/05/2024\",\"11/12/2024\",\"11/19/2024\",\"11/26/2024\",\"12/03/2024\",\"12/10/2024\",\"12/17/2024\",\"12/24/2024\",\"12/31/2024\",\"01/07/2025\",\"01/14/2025\",\"01/21/2025\",\"01/28/2025\",\"02/04/2025\",\"02/11/2025\",\"02/18/2025\",\"02/25/2025\",\"03/04/2025\",\"03/11/2025\",\"03/18/2025\",\"03/25/2025\",\"04/01/2025\",\"04/08/2025\",\"04/15/2025\",\"04/22/2025\",\"04/29/2025\",\"05/06/2025\",\"05/13/2025\",\"05/20/2025\",\"05/27/2025\",\"06/03/2025\",\"06/10/2025\",\"06/17/2025\",\"06/22/2024\",\"06/29/2024\",\"07/06/2024\",\"07/13/2024\",\"07/20/2024\",\"07/27/2024\",\"08/03/2024\",\"08/10/2024\",\"08/17/2024\",\"08/24/2024\",\"08/31/2024\",\"09/07/2024\",\"09/14/2024\",\"09/21/2024\",\"09/28/2024\",\"10/05/2024\",\"10/12/2024\",\"10/19/2024\",\"10/26/2024\",\"11/02/2024\",\"11/09/2024\",\"11/16/2024\",\"11/23/2024\",\"11/30/2024\",\"12/07/2024\",\"12/14/2024\",\"12/21/2024\",\"12/28/2024\",\"01/04/2025\",\"01/11/2025\",\"01/18/2025\",\"01/25/2025\",\"02/01/2025\",\"02/08/2025\",\"02/15/2025\",\"02/22/2025\",\"03/01/2025\",\"03/08/2025\",\"03/15/2025\",\"03/22/2025\",\"03/29/2025\",\"04/05/2025\",\"04/12/2025\",\"04/19/2025\",\"04/26/2025\",\"05/03/2025\",\"05/10/2025\",\"05/17/2025\",\"05/24/2025\",\"05/31/2025\",\"06/07/2025\",\"06/14/2025\",\"06/21/2025\",\"06/23/2024\",\"06/30/2024\",\"07/07/2024\",\"07/14/2024\",\"07/21/2024\",\"07/28/2024\",\"08/04/2024\",\"08/11/2024\",\"08/18/2024\",\"08/25/2024\",\"09/01/2024\",\"09/08/2024\",\"09/15/2024\",\"09/22/2024\",\"09/29/2024\",\"10/06/2024\",\"10/13/2024\",\"10/20/2024\",\"10/27/2024\",\"11/03/2024\",\"11/10/2024\",\"11/17/2024\",\"11/24/2024\",\"12/01/2024\",\"12/08/2024\",\"12/15/2024\",\"12/22/2024\",\"12/29/2024\",\"01/05/2025\",\"01/12/2025\",\"01/19/2025\",\"01/26/2025\",\"02/02/2025\",\"02/09/2025\",\"02/16/2025\",\"02/23/2025\",\"03/02/2025\",\"03/09/2025\",\"03/16/2025\",\"03/23/2025\",\"03/30/2025\",\"04/06/2025\",\"04/13/2025\",\"04/20/2025\",\"04/27/2025\",\"05/04/2025\",\"05/11/2025\",\"05/18/2025\",\"05/25/2025\",\"06/01/2025\",\"06/08/2025\",\"06/15/2025\",\"06/01/2024\",\"06/02/2024\",\"06/03/2024\",\"06/04/2024\",\"06/05/2024\",\"06/06/2024\",\"06/07/2024\",\"06/08/2024\",\"06/09/2024\",\"06/10/2024\",\"06/11/2024\",\"06/12/2024\",\"06/13/2024\",\"06/14/2024\",\"06/15/2024\",\"06/16/2024\",\"06/17/2024\",\"06/18/2024\",\"06/19/2024\",\"06/20/2024\",\"06/21/2024\",\"06/22/2024\",\"06/23/2024\",\"06/24/2024\",\"06/25/2024\",\"06/26/2024\",\"06/27/2024\",\"06/28/2024\",\"06/29/2024\",\"06/30/2024\",\"07/01/2024\",\"07/02/2024\",\"07/03/2024\",\"07/04/2024\",\"07/05/2024\",\"07/06/2024\",\"07/07/2024\",\"07/08/2024\",\"07/09/2024\",\"07/10/2024\",\"07/11/2024\",\"07/12/2024\",\"07/13/2024\",\"07/14/2024\",\"07/15/2024\",\"07/16/2024\",\"07/17/2024\",\"07/18/2024\",\"07/19/2024\",\"07/20/2024\",\"07/21/2024\",\"07/11/2024\",\"07/12/2024\",\"07/25/2024\",\"11/07/2024\",\"11/14/2024\",\"11/21/2024\",\"11/28/2024\",\"12/05/2024\",\"12/12/2024\",\"12/19/2024\",\"12/26/2024\",\"01/02/2025\",\"01/09/2025\",\"01/16/2025\",\"01/23/2025\",\"01/30/2025\"]", "Cutoff": "3:00 PM" }], "Collectors": [{ "ID": 0, "ControlName": "ActivityDate_135", "ApplicationDataType": 2, "ListMember": null, "Name": "Activity Date", "DisplayOrder": 0, "DisplayAlias": null, "Value": null, "Required": false }, { "ID": 0, "ControlName": "ParticipantNamesandAges_135", "ApplicationDataType": 0, "ListMember": null, "Name": "Participant Names and Ages", "DisplayOrder": 0, "DisplayAlias": "Party Name", "Value": null, "Required": false }, { "ID": 0, "ControlName": "SelectYourKauaiHotel_135", "ApplicationDataType": 7, "ListMember": { "ID": 5, "ControlName": null, "Shortcode": "Select Your Kauai Hotel", "Code": "Select Your Kauai Hotel", "Selected": false, "Value": "", "ListMembers": [{ "ID": 101, "ControlName": null, "Shortcode": "-- Select --", "Code": "-- Select --", "Selected": false, "Value": "", "ListMembers": [] }, { "ID": 102, "ControlName": null, "Shortcode": "Alii Kai Princeville", "Code": "Alii Kai Princeville", "Selected": false, "Value": "", "ListMembers": [] }, { "ID": 103, "ControlName": null, "Shortcode": "Aloha Beach Resort", "Code": "Aloha Beach Resort", "Selected": false, "Value": "", "ListMembers": [] }, { "ID": 104, "ControlName": null, "Shortcode": "Aloha Condos", "Code": "Aloha Condos", "Selected": false, "Value": "", "ListMembers": [] }, { "ID": 105, "ControlName": null, "Shortcode": "Aloha Country Inn", "Code": "Aloha Country Inn", "Selected": false, "Value": "", "ListMembers": [] }, { "ID": 106, "ControlName": null, "Shortcode": "Aston Islander On The Beach", "Code": "Aston Islander On The Beach", "Selected": false, "Value": "", "ListMembers": [] }, { "ID": 107, "ControlName": null, "Shortcode": "Aston Poipu Kai", "Code": "Aston Poipu Kai", "Selected": false, "Value": "", "ListMembers": [] }, { "ID": 108, "ControlName": null, "Shortcode": "Bali Hai (Kauai)", "Code": "Bali Hai (Kauai)", "Selected": false, "Value": "", "ListMembers": [] }, { "ID": 109, "ControlName": null, "Shortcode": "Banyan Harbor Resort", "Code": "Banyan Harbor Resort", "Selected": false, "Value": "", "ListMembers": [] }, { "ID": 110, "ControlName": null, "Shortcode": "Cliffs At Princeville", "Code": "Cliffs At Princeville", "Selected": false, "Value": "", "ListMembers": [] }, { "ID": 111, "ControlName": null, "Shortcode": "Coral Reef Hotel Kauai", "Code": "Coral Reef Hotel Kauai", "Selected": false, "Value": "", "ListMembers": [] }, { "ID": 112, "ControlName": null, "Shortcode": "Courtyard By Marriott (Kauai)", "Code": "Courtyard By Marriott (Kauai)", "Selected": false, "Value": "", "ListMembers": [] }, { "ID": 113, "ControlName": null, "Shortcode": "Cruise Ship", "Code": "Cruise Ship", "Selected": false, "Value": "", "ListMembers": [] }, { "ID": 114, "ControlName": null, "Shortcode": "Embassy Vacation Resort Poipu", "Code": "Embassy Vacation Resort Poipu", "Selected": false, "Value": "", "ListMembers": [] }, { "ID": 115, "ControlName": null, "Shortcode": "Garden Island Inn", "Code": "Garden Island Inn", "Selected": false, "Value": "", "ListMembers": [] }, { "ID": 116, "ControlName": null, "Shortcode": "Garden Island Rentals", "Code": "Garden Island Rentals", "Selected": false, "Value": "", "ListMembers": [] }, { "ID": 117, "ControlName": null, "Shortcode": "Grand Hyatt Resort", "Code": "Grand Hyatt Resort", "Selected": false, "Value": "", "ListMembers": [] }, { "ID": 118, "ControlName": null, "Shortcode": "Hanalei Bay Resort", "Code": "Hanalei Bay Resort", "Selected": false, "Value": "", "ListMembers": [] }, { "ID": 119, "ControlName": null, "Shortcode": "Hilton Garden Inn Kauai Wailua Bay", "Code": "Hilton Garden Inn Kauai Wailua Bay", "Selected": false, "Value": "", "ListMembers": [] }, { "ID": 120, "ControlName": null, "Shortcode": "Hilton Kauai Beach Resort", "Code": "Hilton Kauai Beach Resort", "Selected": false, "Value": "", "ListMembers": [] }, { "ID": 121, "ControlName": null, "Shortcode": "Hotel Coral Reef", "Code": "Hotel Coral Reef", "Selected": false, "Value": "", "ListMembers": [] }, { "ID": 122, "ControlName": null, "Shortcode": "Hyatt Regency Kauai", "Code": "Hyatt Regency Kauai", "Selected": false, "Value": "", "ListMembers": [] }, { "ID": 123, "ControlName": null, "Shortcode": "Kapaa Sands Resort", "Code": "Kapaa Sands Resort", "Selected": false, "Value": "", "ListMembers": [] }, { "ID": 124, "ControlName": null, "Shortcode": "Kapaa Shores Resort", "Code": "Kapaa Shores Resort", "Selected": false, "Value": "", "ListMembers": [] }, { "ID": 125, "ControlName": null, "Shortcode": "Kauai Beach Resort (Ocean Escape)", "Code": "Kauai Beach Resort (Ocean Escape)", "Selected": false, "Value": "", "ListMembers": [] }, { "ID": 126, "ControlName": null, "Shortcode": "Kauai Beach Villas", "Code": "Kauai Beach Villas", "Selected": false, "Value": "", "ListMembers": [] }, { "ID": 127, "ControlName": null, "Shortcode": "Kauai Coast Resort At The Beach", "Code": "Kauai Coast Resort At The Beach", "Selected": false, "Value": "", "ListMembers": [] }, { "ID": 128, "ControlName": null, "Shortcode": "Kauai Inn", "Code": "Kauai Inn", "Selected": false, "Value": "", "ListMembers": [] }, { "ID": 129, "ControlName": null, "Shortcode": "Kauai Lagoons Marriott", "Code": "Kauai Lagoons Marriott", "Selected": false, "Value": "", "ListMembers": [] }, { "ID": 130, "ControlName": null, "Shortcode": "Kauai Marriott Resort", "Code": "Kauai Marriott Resort", "Selected": false, "Value": "", "ListMembers": [] }, { "ID": 131, "ControlName": null, "Shortcode": "Kauai Marriott Resort & Beach Club", "Code": "Kauai Marriott Resort & Beach Club", "Selected": false, "Value": "", "ListMembers": [] }, { "ID": 132, "ControlName": null, "Shortcode": "Kauai Sands Hotel", "Code": "Kauai Sands Hotel", "Selected": false, "Value": "", "ListMembers": [] }, { "ID": 133, "ControlName": null, "Shortcode": "Kauai Shores", "Code": "Kauai Shores", "Selected": false, "Value": "", "ListMembers": [] }, { "ID": 134, "ControlName": null, "Shortcode": "Kauhale Makai Condos", "Code": "Kauhale Makai Condos", "Selected": false, "Value": "", "ListMembers": [] }, { "ID": 135, "ControlName": null, "Shortcode": "Kiahuna Plantation & The Beach", "Code": "Kiahuna Plantation & The Beach", "Selected": false, "Value": "", "ListMembers": [] }, { "ID": 136, "ControlName": null, "Shortcode": "Koa Kea Resort", "Code": "Koa Kea Resort", "Selected": false, "Value": "", "ListMembers": [] }, { "ID": 137, "ControlName": null, "Shortcode": "Koloa Landing At Poipu Beach Wyndham Grand Resort", "Code": "Koloa Landing At Poipu Beach Wyndham Grand Resort", "Selected": false, "Value": "", "ListMembers": [] }, { "ID": 138, "ControlName": null, "Shortcode": "Kuhio Shore Condominiums", "Code": "Kuhio Shore Condominiums", "Selected": false, "Value": "", "ListMembers": [] }, { "ID": 139, "ControlName": null, "Shortcode": "Lanikai Resort", "Code": "Lanikai Resort", "Selected": false, "Value": "", "ListMembers": [] }, { "ID": 140, "ControlName": null, "Shortcode": "Lawai Beach Resort", "Code": "Lawai Beach Resort", "Selected": false, "Value": "", "ListMembers": [] }, { "ID": 141, "ControlName": null, "Shortcode": "Makahuena at Poipu", "Code": "Makahuena at Poipu", "Selected": false, "Value": "", "ListMembers": [] }, { "ID": 142, "ControlName": null, "Shortcode": "Marriott Waiohai Beach Club", "Code": "Marriott Waiohai Beach Club", "Selected": false, "Value": "", "ListMembers": [] }, { "ID": 143, "ControlName": null, "Shortcode": "Mokihana Of Kauai", "Code": "Mokihana Of Kauai", "Selected": false, "Value": "", "ListMembers": [] }, { "ID": 144, "ControlName": null, "Shortcode": "Other", "Code": "Other", "Selected": false, "Value": "", "ListMembers": [] }, { "ID": 145, "ControlName": null, "Shortcode": "Plantation Hale Suites", "Code": "Plantation Hale Suites", "Selected": false, "Value": "", "ListMembers": [] }, { "ID": 146, "ControlName": null, "Shortcode": "Poipu Kapili", "Code": "Poipu Kapili", "Selected": false, "Value": "", "ListMembers": [] }, { "ID": 147, "ControlName": null, "Shortcode": "Poipu Shores", "Code": "Poipu Shores", "Selected": false, "Value": "", "ListMembers": [] }, { "ID": 148, "ControlName": null, "Shortcode": "Pono Kai Resort", "Code": "Pono Kai Resort", "Selected": false, "Value": "", "ListMembers": [] }, { "ID": 149, "ControlName": null, "Shortcode": "Prince Kuhio Resort", "Code": "Prince Kuhio Resort", "Selected": false, "Value": "", "ListMembers": [] }, { "ID": 150, "ControlName": null, "Shortcode": "Puu Poa", "Code": "Puu Poa", "Selected": false, "Value": "", "ListMembers": [] }, { "ID": 151, "ControlName": null, "Shortcode": "Royal Sonesta Kauai Resort", "Code": "Royal Sonesta Kauai Resort", "Selected": false, "Value": "", "ListMembers": [] }, { "ID": 152, "ControlName": null, "Shortcode": "Sheraton Kauai Coconut Beach", "Code": "Sheraton Kauai Coconut Beach", "Selected": false, "Value": "", "ListMembers": [] }, { "ID": 153, "ControlName": null, "Shortcode": "Sheraton Kauai Resort", "Code": "Sheraton Kauai Resort", "Selected": false, "Value": "", "ListMembers": [] }, { "ID": 154, "ControlName": null, "Shortcode": "St. Regis Princeville Resort", "Code": "St. Regis Princeville Resort", "Selected": false, "Value": "", "ListMembers": [] }, { "ID": 155, "ControlName": null, "Shortcode": "Sunset Kahili Condominium", "Code": "Sunset Kahili Condominium", "Selected": false, "Value": "", "ListMembers": [] }, { "ID": 156, "ControlName": null, "Shortcode": "The Point At Poipu", "Code": "The Point At Poipu", "Selected": false, "Value": "", "ListMembers": [] }, { "ID": 157, "ControlName": null, "Shortcode": "Wailua Bay View Condominiums", "Code": "Wailua Bay View Condominiums", "Selected": false, "Value": "", "ListMembers": [] }, { "ID": 158, "ControlName": null, "Shortcode": "Waimea Plantation Cottages", "Code": "Waimea Plantation Cottages", "Selected": false, "Value": "", "ListMembers": [] }, { "ID": 159, "ControlName": null, "Shortcode": "Waipouli Beach Resort", "Code": "Waipouli Beach Resort", "Selected": false, "Value": "", "ListMembers": [] }, { "ID": 160, "ControlName": null, "Shortcode": "Westin Princeville Ocean Resort Villas", "Code": "Westin Princeville Ocean Resort Villas", "Selected": false, "Value": "", "ListMembers": [] }, { "ID": 161, "ControlName": null, "Shortcode": "Wyndham Ka 'Eo Kai", "Code": "Wyndham Ka 'Eo Kai", "Selected": false, "Value": "", "ListMembers": [] }, { "ID": 162, "ControlName": null, "Shortcode": "Wyndham Makai Club", "Code": "Wyndham Makai Club", "Selected": false, "Value": "", "ListMembers": [] }, { "ID": 163, "ControlName": null, "Shortcode": "Wyndham Shearwater", "Code": "Wyndham Shearwater", "Selected": false, "Value": "", "ListMembers": [] }] }, "Name": "Select Your Kauai Hotel", "DisplayOrder": 0, "DisplayAlias": null, "Value": null, "Required": false }], "Schedules": [], "Groupings": [{ "ID": 1, "Name": "Full Luau", "DisplayOrder": 0, "Content": null, "Active": true, "Hidden": false }, { "ID": 2, "Name": "Show Only", "DisplayOrder": 0, "Content": null, "Active": true, "Hidden": false }], "Customer": { "Email": "", "MobilePhone": "" } };
+    </script>
+
+    <form id="addToCartForm" method="post">
+      <input type="hidden" name="cart" value="True" />
+      <div id="reservation-window"></div>
+    </form>
+
+    <script>
+      window.onload = function () {
+        document.getElementById("addToCartForm").setAttribute("action", "/products/details/" + cartData.ProductID + "");
+      };
+    </script>
+
+    <script src="js/momentJS/moment.js"></script>
+    <script src="js/momentJS/moment-timezone.js"></script>
+    <script src="js/reservation-template.js"></script>
+    <script src="js/reservation-config.js"></script>
+    <script src="js/reservation-theme.js"></script>
+    <!-- ======== -->
+
+    <!-- ======================================================= -->
+
+    <!-- ============================ -->
+    <div id="why-book-with">
+      <h2>why book with us?</h2>
+      <ul>
+        <li>
+          <div class="booking-details">
+            <div class="booking-img-container">
+              <img src="images/guarantee-icons.png" alt="" style="left:0;top:0;">
+            </div>
+            <header>Secure Shopping</header>
+            <p>Safe, secure online booking system with validated privacy protection.</p>
+          </div>
+        </li>
+        <li>
+          <div class="booking-details">
+            <div class="booking-img-container">
+              <img src="images/guarantee-icons.png" alt="" style="left:-11em;top:0;">
+            </div>
+            <header>Advance Booking<br />Satisfaction</header>
+            <p>Avoid sellouts and price increases. Relax knowing your luau tickets are reserved and guaranteed.</p>
+          </div>
+        </li>
+        <li>
+          <div class="booking-details">
+            <div class="booking-img-container">
+              <img src="images/guarantee-icons.png" alt="" style="left:-16.5em;top:0;">
+            </div>
+            <header>Friendly Support</header>
+            <p>Our staff will answer any questions you may have and ensure 100% satisfaction.</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </main>
+  <!-- ============================ -->
+  <footer class="footer">
+
+    <a href="#" id="logo-footer">
+      <img src="images/ferngrottokauai-logo.png" alt="">
+    </a>
+
+    <div class="social">
+      <p>follow us</p>
+      <ul>
+        <li><a href="https://www.youtube.com/hawaiidiscount"><img src="images/youtube.svg" alt=""></a></li>
+        <li><a href="https://www.facebook.com/HawaiiDiscount"><img src="images/facebook.svg" alt=""></a></li>
+        <li><a href=""><img src="images/instagram.svg" alt=""></a></li>
+        <li><a href="https://twitter.com/hawaiidiscount"><img src="images/twitter.svg" alt=""></a></li>
+      </ul>
+    </div>
+    <section>
+      <ul>
+        <li><b>navigation</b></li>
+        <li> <a href="reservations.htm">reservations</a></li>
+        <li> <a href="#">home</a> </li>
+        <li> <a href="#">contact</a> </li>
+        <li> <a href="#">about us</a> </li>
+        <li> <a href="#">cart</a> </li>
+      </ul>
+      <ul>
+        <li><b>site info</b></li>
+        <li> <a href="#">faq</a> </li>
+        <li> <a href="#">site map</a> </li>
+        <li> <a href="#">privacy policy</a> </li>
+        <li> <a href="#">terms</a> </li>
+        <li> <a href="#">login</a> </li>
+      </ul>
+    </section>
+    <p>Copyright (c) 2024 hawaii discount All Rights Reserved.</p>
+  </footer>
+  <!-- =========================== -->
+
+  <!-- =========================== -->
+  <script type="text/javascript" src="js/toggle.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>

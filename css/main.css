@@ -119,7 +119,6 @@ main{
 	border-bottom: 0.15em solid white;
 }
 #masthead {
-  position: absolute;
   font-size: 1em;
   width: 100%;
   background-color: #588157de;
@@ -972,3 +971,430 @@ margin-left: 0.25em;
     }*/
  }
  
+
+
+   /*product detail*/
+
+#activity-header {
+  width: 100%;
+  overflow: hidden;
+  text-align: center;
+  position: relative;
+  height: 25em;
+}
+#activity-header img {
+  position: absolute;
+  height: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+}
+@media(max-width:850px){
+  #activity-header img{
+    bottom: -5em;
+  }
+}
+@media(max-width:550px){
+  #activity-header img{
+    bottom: -5em;
+    height: 100%;
+    width: auto;
+  }
+}
+#activity-header.activity-header-wide img {
+  height: 100%;
+  width: auto;
+}
+#product-content {
+  text-align: left;
+  display: table;
+  width: 100%;
+  transform: scaleX(-1);
+  background-size: cover;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+#player-wrapper {
+  display: table-cell;
+  width: 45%;
+  vertical-align: middle;
+  text-align: center;
+  padding: 1em;
+  transform: scaleX(-1);
+}
+#product-main {
+  display: table-cell;
+  vertical-align: top;
+  width: 55%;
+  padding-top: 1em;
+  transform: scaleX(-1);
+}
+#player-wrapper iframe {
+  width: 95%;
+  height: 20em;
+  max-width: 30em;
+}
+h1#product-header {
+  text-transform: capitalize;
+  color: #405848;
+  font-size: 1.8em;
+  margin-top: 0.25em;
+  line-height: 1em;
+  font-family: "Josefin Sans", Verdana, Geneva, Tahoma, sans-serif;
+}
+#product-subtitle {
+  text-transform: capitalize;
+  color: #333;
+  font-size: 1.15em;
+  margin-bottom: 0.75em;
+  margin-top: 0.5em;
+}
+#product-features {
+  display: block;
+  width: 100%;
+  margin-bottom: 2em;
+  margin-top: 2em;
+  max-width: 40em;
+}
+#product-features li {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0.25em;
+  background: #61875d;
+  padding: 0.25em;
+  border-radius: 1em;
+}
+#product-features .material-symbols-outlined {
+  color: #ffd700;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+#product-features span {
+  color: #ffd700;
+  font-size: 1.15em;
+  display: inline-block;
+  vertical-align: middle;
+  text-transform: capitalize;
+}
+
+.product-duration {
+  color: #333;
+  margin: 1em auto;
+}
+.product-duration span {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#product-prices {
+  display: inline-table;
+  width: 50%;
+  margin-top: 1em;
+  vertical-align: middle;
+}
+#product-prices li {
+  display: table-cell;
+  text-align: left;
+  padding-right: 1em;
+  width: 50%;
+}
+#before-price {
+  font-size: 1.25em;
+  text-transform: capitalize;
+  color: #333;
+  opacity: 0.5;
+}
+#before-price span {
+  font-size: 1.5em;
+  text-decoration: line-through;
+  font-weight: bold;
+  display: block;
+}
+#after-price {
+  font-size: 1.25em;
+  text-transform: capitalize;
+  color: #333;
+}
+#after-price span {
+  font-size: 1.5em;
+  font-weight: bold;
+  display: block;
+}
+#product-buttons {
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: 1em;
+}
+
+#product-button {
+  background: gold;
+  display: inline-block;
+  border-radius: 2em;
+  padding: 0.5em 0.5em 0.5em 1em;
+  text-align: center;
+  font-size: 1.2em;
+  vertical-align: middle;
+  cursor: pointer;
+  border: 0.2em solid #405848;
+  box-shadow: 0em 0.5em 0.75em rgba(0,0,0,0.33);
+}
+#product-button p {
+  text-transform: capitalize;
+  color: #405848;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 1.15em;
+}
+#product-button .material-symbols-outlined {
+  color: gold;
+  background: #405848;
+  border-radius: 1em;
+  font-weight: bold;
+  display: inline-block;
+  font-size: 1.5em;
+  vertical-align: bottom;
+}
+#seating {
+  display: block;
+  border-radius: 5em;
+  vertical-align: middle;
+  font-size: 1.1em;
+  border: 0.15em solid #032541;
+  color: #042342;
+  text-align: center;
+  padding: 0.5em 0em;
+  max-width: 10em;
+  margin: 1em auto;
+}
+#book-now-alt {
+  position: fixed;
+  bottom: 0.5em;
+  left: 0.5em;
+  z-index: 988;
+  background: #dfbc00;
+  border: 0;
+  font-size: 1.25em;
+  text-transform: capitalize;
+  color: #1d1d1d;
+  padding: 0.75em;
+  font-weight: bold;
+  cursor: pointer;
+}
+#book-now-alt.hidden {
+  display: none;
+}
+#book-now-alt.visible {
+  display: block;
+}
+#book-now-alt span {
+  display: inline-block;
+  vertical-align: text-top;
+}
+
+.activity-details {
+  padding: 2em 1em;
+  margin: 0 auto;
+  display: block;
+  max-width: 100%;
+  font-size: 1.2em;
+  background-size: cover;
+  background-position: center;
+  background: #405848;
+}
+
+.activity-article {
+  max-width: 900px;
+  margin: 1em auto;
+  padding: 1em;
+  background: wheat;
+  padding: 2em;
+}
+.bulletpoint-row {
+  column-count: 2;
+  padding: 2em;
+  column-fill: balance;
+}
+
+#img-alt{
+	max-width: 28em;
+}
+
+@media(max-width:800px){
+  .bulletpoint-row{
+    column-count: 1;
+    text-align: center;
+    list-style-position: inside;
+  }
+}
+.bulletpoint-header {
+  margin: 1em auto;
+  color: #790052;
+}
+.bulletpointstyles li {
+  line-height: 2em;
+  list-style-type: disc;
+  margin-bottom: 0.5em;
+  color: #333;
+}
+.activity-article h3 {
+	color: #145586;
+}
+.activity-article p {
+  margin-bottom: 1em;
+  line-height: 1.5em;
+  color: #333;
+  font-size: 0.9em;
+}
+
+.activity-article ul {
+  max-width: 30em;
+  margin: 1em auto;
+}
+.activity-article ul li {
+  color: #333;
+  margin-bottom: 1em;
+  list-style-type: disc !important;
+}
+
+
+
+#activity-aside {
+  width: 100%;
+  position: relative;
+  background-image: url("../images/kauai-tubing-background-orange.jpg");
+  background-size: cover;
+  background-position: bottom;
+  overflow: hidden;
+  padding: 2em 0em;
+  border-top: 1em solid wheat;
+}
+#activity-aside article{
+ max-width: 900px;
+  margin: 0 auto;
+  width: 90%;
+  background-color: wheat;
+  padding: 2em;
+}
+#activity-aside article h3{
+  width: 100%;
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 1.5em;
+  color: #405848;
+}
+#activity-aside article ul{
+  margin-top: 2em;
+}
+#activity-aside article ul li{
+  display: table;
+  width: 100%;
+  margin-bottom: 1em;
+}
+#activity-aside article b{
+  display: table-cell;
+  width: 20%; 
+  color: #405848;
+}
+#activity-aside article p{
+    display: table-cell;
+  width: 60%;
+  line-height: 1.5em;
+}
+
+@media(max-width:600px){
+  #activity-aside article ul li,
+  #activity-aside article b,
+  #activity-aside article p{
+  display: block;
+  width: 100%;
+  padding: 0.5em
+}
+}
+
+
+@media (max-width: 900px) {
+  #book-now-alt {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+  }
+
+  #player-wrapper {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-top: 1em;
+  }
+  #product-main {
+    display: block;
+    width: 100%;
+    padding: 0em 1em;
+    text-align: center;
+    font-size: 1.15em;
+  }
+  #product-features {
+    margin: 1em auto;
+  }
+  #product-prices {
+    display: table;
+    width: 100%;
+    text-align: center;
+  }
+  #product-prices li {
+    text-align: center;
+    padding: 1em;
+  }
+  #product-buttons {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+#activity-gallery {
+  width: 100%;
+  text-align: center;
+}
+#activity-gallery{
+	background:rgb(97, 135, 93);
+  background-size: 42em;
+  background-position: center;
+  font-size: 1em;
+  text-align: center;
+	padding: 2em;
+	border-top: 1em solid #a3b18a;
+	border-bottom: 1em solid wheat;
+}
+#activity-gallery li {
+  display: inline-block;
+  width: 30%;
+  overflow: hidden;
+  position: relative;
+  height: 16em;
+  margin: 0.5em;
+  text-align: center;
+  border: 0.5em solid wheat;
+  background: #333;
+  box-shadow: 0em 0.5em 0.75em rgba(0,0,0,0.33);
+}
+#activity-gallery li img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  height: 100%;
+  
+}
+#activity-gallery li .img-description {
+  color: #333;
+  padding: 0.75em;
+  text-align: left;
+}
+@media(max-width:900px){
+  #activity-gallery li{
+    width: 100%;
+    max-width: 20em;
+  }
+}

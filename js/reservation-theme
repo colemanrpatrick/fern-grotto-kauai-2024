@@ -1,0 +1,33 @@
+// book now corner button
+try {
+  var $thresholdPoint = document.getElementById("product-main");
+  var $reservationBtn = document.getElementById("book-now-alt");
+
+  let checkWindowPos = () => {
+    if (window.scrollY > $thresholdPoint.offsetTop) {
+      $reservationBtn.className = "visible";
+    } else {
+      $reservationBtn.className = "hidden";
+    }
+  };
+
+  checkWindowPos();
+
+  window.onscroll = () => {
+    checkWindowPos();
+  };
+} catch (error) {
+  console.log(error);
+}
+
+// lazyload gallery images
+
+let galleryAnchor = document.getElementsByClassName("gallery-image");
+
+window.onload = () => {
+  for (let i = 0; i < galleryAnchor.length; i++) {
+    let galleryImg = document.createElement("IMG");
+    galleryImg.setAttribute("src", galleryAnchor[i].getAttribute("href"));
+    galleryAnchor[i].appendChild(galleryImg);
+  }
+};
